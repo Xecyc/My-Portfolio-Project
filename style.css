@@ -1,0 +1,233 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%; /*** This was done to use rem instead of px, 1 rem = 10px */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  min-width: 100%;
+}
+
+.navbar {
+  background-color: #3c3a39;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 4.8rem;
+}
+
+.hide {
+  display: none;
+}
+
+.ham-icon {
+  margin: 2rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.nav-item a {
+  font-family: "Inter", sans-serif;
+  font-size: 1.7rem;
+  line-height: 2rem;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+}
+
+.mail-icon {
+  height: 2.4rem;
+}
+
+.brand-name {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+  margin: 0.5rem;
+  padding: 1rem 1.2rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+/********* Hamburger menu and on-Click action *********/
+
+/** Hamburger icon and animations **/
+
+@media (max-width: 768px) {
+  .bar {
+    height: 0.2rem;
+    background: #fff;
+    margin: 0.3rem 0;
+    transform-origin: left;
+    transition: all 0.3s;
+  }
+
+  .ham-icon.active .bar:nth-child(1) {
+    transform: rotate(45deg);
+  }
+
+  .ham-icon.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .ham-icon.active .bar:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+
+  /** hamburger menu **/
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-menu-hide.active {
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    bottom: 0.0001rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-top: 12rem;
+    background-color: #3c3a39;
+    padding-left: 1.5rem;
+    transition: 0.3s;
+  }
+
+  .close-icon.active {
+    position: fixed;
+    right: 10%;
+    margin-top: 8%;
+    margin-right: -4.5%;
+  }
+
+  .nav-item a {
+    height: 5.6rem;
+    width: 32.7rem;
+    font-family: "Inter", sans-serif;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .nav-link::after {
+    display: block;
+    content: "";
+    width: 90%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+  }
+}
+
+/**********************   */
+
+/*** Main - Headline ***/
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+  padding-top: 12rem;
+  padding-left: 2.4rem;
+  min-height: 59rem;
+  min-width: 100%;
+  background-color: #1c1a19;
+  background-image: url("./img/background/illustration-header-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: bottom -23% right;
+  overflow: hidden;
+}
+
+.headline h1 {
+  max-width: 32.7rem;
+  min-height: 12.4rem;
+  font-family: "Crete Round", sans-serif;
+  color: #ff6b00;
+  font-weight: 400;
+  font-size: 5.6rem;
+  line-height: 6.4rem;
+  letter-spacing: 0.037rem;
+}
+
+.headline h1 span h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: #fff5e1;
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.headline p {
+  max-width: 32.7rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: #fff;
+}
+
+/* ------------------------ */
+
+/*** Main > Social Media Icons ***/
+
+.social-media ul {
+  display: flex;
+}
+
+.icon-box {
+  display: flex;
+  padding: 0.8rem;
+}
+
+.media-img {
+  display: block;
+}
+
+footer .media-img {
+  filter:
+    brightness(0) saturate(100%) invert(35%) sepia(11%) saturate(1273%)
+    hue-rotate(180deg) brightness(96%) contrast(85%);
+}
+
+.media-img:hover {
+  cursor: pointer;
+  filter:
+    invert(49%) sepia(77%) saturate(5619%) hue-rotate(8deg)
+    brightness(96%) contrast(97%);
+}
