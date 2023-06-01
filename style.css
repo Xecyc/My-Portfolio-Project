@@ -163,7 +163,7 @@ header {
   padding-top: 12rem;
   padding-left: 2.4rem;
   min-height: 59rem;
-  min-width: 100%;
+  min-width: 100vw;
   background-color: #1c1a19;
   background-image: url("./img/background/illustration-header-mobile.svg");
   background-repeat: no-repeat;
