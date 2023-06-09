@@ -747,7 +747,7 @@ footer {
     display: flex;
     align-items: flex-start;
     width: 50%;
-    gap: 1.5rem;
+    gap: 2rem;
   }
 
   .about_me-text p {
