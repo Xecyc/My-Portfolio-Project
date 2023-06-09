@@ -173,12 +173,16 @@ header {
   text-align: center;
 }
 
+.works-header h2 {
+  font-weight: 400;
+}
+
 .works-container .line {
   justify-self: center;
   width: 32.7rem;
   border: 1px solid #212121;
-  margin-bottom: 2rem;
-  margin-top: 0.5rem;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
 }
 
 .img-placeholder {
@@ -363,6 +367,7 @@ header {
   flex-direction: column;
   align-items: flex-start;
   padding: 0 0.5rem 0 2rem;
+  gap: 2rem;
 }
 
 .about_me-text h2 {
@@ -510,7 +515,6 @@ footer .media-img {
 }
 
 /** Contact Form and Footer social media **/
-
 .contact-section {
   display: flex;
   flex-direction: column;
@@ -698,6 +702,7 @@ footer {
     min-width: 69%;
     border: 1px solid #212121;
     margin-bottom: 0;
+    margin-top: 0.5rem;
   }
 
   .works-header-multipost {
@@ -713,6 +718,11 @@ footer {
 
   .works-stories {
     flex-basis: 30%;
+  }
+
+  .works-stories h2 {
+    min-width: 32.7rem;
+    text-align: left;
   }
 
   .left {
@@ -737,7 +747,7 @@ footer {
     display: flex;
     align-items: flex-start;
     width: 50%;
-    gap: 1.5rem;
+    gap: 2rem;
   }
 
   .about_me-text p {
