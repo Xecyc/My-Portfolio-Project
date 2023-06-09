@@ -173,12 +173,16 @@ header {
   text-align: center;
 }
 
+.works-header h2 {
+  font-weight: 400;
+}
+
 .works-container .line {
   justify-self: center;
   width: 32.7rem;
   border: 1px solid #212121;
-  margin-bottom: 2rem;
-  margin-top: 0.5rem;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
 }
 
 .img-placeholder {
@@ -511,6 +515,18 @@ footer .media-img {
 
 /** Contact Form and Footer social media **/
 
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5.8rem;
+  max-width: 37.5rem;
+  height: 93rem;
+  font-family: "Inter", sans-serif;
+  padding: 12rem 2.4rem;
+  text-align: center;
+}
+
 .contact-section p {
   font-weight: 700;
   font-size: 3.2rem;
@@ -663,6 +679,11 @@ footer {
     flex-direction: column;
     width: 100%;
     margin-bottom: 5rem;
+  }
+
+  .works-container .line {
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
   }
 
   .works-header {
