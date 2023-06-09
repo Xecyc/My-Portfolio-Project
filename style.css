@@ -681,11 +681,6 @@ footer {
     margin-bottom: 5rem;
   }
 
-  .works-container .line {
-    /* margin-bottom: 2rem; */
-    margin-top: 0.5rem;
-  }
-
   .works-header {
     display: flex;
     align-items: center;
