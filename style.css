@@ -599,7 +599,7 @@ footer {
 
 /** Animations **/
 
-@keyframes slideInLeft {
+/* @keyframes slideInLeft {
   0% {
     transform: translateX(-100%);
   }
@@ -607,7 +607,7 @@ footer {
   100% {
     transform: translateX(0);
   }
-}
+} */
 
 /** error message **/
 
