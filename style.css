@@ -598,7 +598,6 @@ footer {
 }
 
 /** Animations **/
-
 @keyframes slideInLeft {
   0% {
     transform: translateX(-100%);
