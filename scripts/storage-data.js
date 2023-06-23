@@ -24,7 +24,7 @@ function getData() {
   if (parseData !== 'undefined' || parseData !== 'null') {
     document.getElementById('name').value = parseData.storedName;
     document.getElementById('email').value = parseData.storedEmail;
-    document.getElementById('msg').value = parseData.storedEmail;
+    document.getElementById('msg').value = parseData.storedMsg;
   }
 }
 getData();
